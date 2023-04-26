@@ -10,7 +10,7 @@
             "field": "character",
             "title": "Character",
             "type": "nominal",
-            "sort": "-y",
+            "sort": ["Isaac", "Azazel", "Cain", "Judas", "Eden", "Maggie", "Samson", "???", "Lazarus", "Eve", "Lilith", "The Lost", "Keeper"],
             "scale": {
                 
             },
