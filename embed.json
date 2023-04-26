@@ -5,7 +5,7 @@
     "transform": [
         {
             "density": "percent",
-            "bandwidth": 0.5,
+            "bandwidth": 0.7,
             "groupby": [
                 "dlc"
             ],
