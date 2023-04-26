@@ -35,7 +35,8 @@
           "legend": {
             "labelFontSize": 16,
             "title": "Boss",
-            "titleFontSize": 18
+            "titleFontSize": 18,
+            "values": ["Mega Satan", "The Lamb", "???", "Satan", "Isaac", "Hush", "Boss Rush"]
           }
         }
       }
