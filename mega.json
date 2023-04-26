@@ -43,7 +43,7 @@
             }
         },
         "shape": {
-            "field": "boss", "type":"nominal"
+            "field": "chapter", "type":"ordinal"
         }
     },
     "config": {
