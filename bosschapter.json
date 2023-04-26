@@ -12,7 +12,7 @@
           "field": "boss",
           "title": "Boss",
           "type": "nominal",
-          "sort": ["Boss Rush", "Hush", "Isaac", "Satan", "???", "The Lamb", "Mega Satan"],
+          "sort": ["Mega Satan", "The Lamb", "???", "Satan", "Isaac", "Hush", "Boss Rush"],
           "scale": {},
           "axis": {
             "titleFontSize": 16,
