@@ -1,6 +1,6 @@
 {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "data": { "url": "http://web.simmons.edu/~whitefur/rebirth/percent_dlc.json"
+            "data": { "url": "http://web.simmons.edu/~whitefur/rebirth/percent_dlc.json",
                "values": [
                     { "dlc": "Rebirth", "percent": 65 },
                     { "dlc": "Rebirth", "percent": 64 },
