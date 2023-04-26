@@ -678,4 +678,4 @@
                 "opacity": { "condition": { "param": "industry", "value": 1 }, "value": 0.2 }
             },
             "config": {}
-        };
+        }
