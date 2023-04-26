@@ -641,8 +641,8 @@
                     { "dlc": "Repentance", "percent": 2.29999995231628 }
                 ]
             },
-            "width": 1000,
-            "height": 300,
+            "width": "container",
+            "height": "container",
             "transform": [
                 {
                     "density": "percent",
@@ -661,8 +661,8 @@
             ],
             "mark": { "type": "bar" },
             "encoding": {
-                "x": { "field": "value", "title": "% of players with the achievement", "type": "quantitative" },
-                "y": { "field": "density", "type": "quantitative", "stack": false },
+                "x": { "field": "value", "title": "% of players with the achievement", "type": "quantitative", "scale": { "domain":[0, 100] } },
+                "y": { "field": "density", "title": "Number of achivements", "type": "quantitative", "stack": false }
                 "color": {
                     "field": "dlc",
                     "scale": {
