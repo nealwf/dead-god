@@ -3,14 +3,14 @@
     "width": 1000,
     "height": 500,
     "mark": {
-        "type": "line"
+        "type": "point"
     },
     "encoding": {
         "x": {
-            "field": "character",
-            "title": "Character",
+            "field": "boss",
+            "title": "Boss",
             "type": "nominal",
-            "sort": ["Isaac", "Azazel", "Cain", "Judas", "Eden", "Maggie", "Samson", "???", "Lazarus", "Eve", "Lilith", "The Lost", "Keeper"],
+            "sort": ["Boss Rush", "Hush", "Isaac", "Satan", "???", "The Lamb", "Mega Satan"],
             "scale": {
                 
             },
@@ -20,18 +20,14 @@
             }
         },
         "y": {
-            "aggregate": "average",
             "field": "rarity",
-            "title": "% of players with the achievement",
+            "title": "Rarity",
             "type": "quantitative",
             "stack": false,
             "axis": {
                 "titleFontSize": 16,
                 "labelFontSize": 14
             }
-        },
-        "detail": {
-            "field": "chapter"
         },
         "color": {
             "field": "boss",
@@ -43,9 +39,6 @@
                 "title": "Boss",
                 "titleFontSize": 18
             }
-        },
-        "shape": {
-            "field": "chapter", "type":"ordinal"
         }
     },
     "config": {
