@@ -1,9 +1,47 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
-  "height": 500,
+  "width": 700,
+  "height": 400,
   "background": "#fdf9f2",
   "layer": [
+    {
+      "mark": {"type": "line",
+
+        "strokeCap":"round",
+        "stroke": "#cbb9ad"
+
+      },
+      "encoding": {
+        "x": {
+          "field": "boss",
+          "title": "Boss",
+          "type": "nominal",
+          "sort": [
+            "Boss Rush",
+            "Hush",
+            "Isaac",
+            "Satan",
+            "???",
+            "The Lamb",
+            "Mega Satan"       
+          ]
+        },
+        "y": {"field": "rarity", "aggregate": "mean"},
+        "order":{
+          "field": "chapter"
+        },
+        "color": {
+          "legend": {
+            "labelFontSize": 16,
+            "title": null,
+            "titleFontSize": 18,
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 145,
+            "legendY": -50
+        }
+      }}
+    },
     {
       "mark": {"type": "point"},
       "encoding": {
@@ -20,56 +58,42 @@
             "The Lamb",
             "Mega Satan"       
           ],
-          "scale": {},
-          "axis": {"titleFontSize": 16, "labelFontSize": 14, "labelAngle": 0}
+          "axis": {"titleFontSize": 16, "titleFont": "Pangolin, sans-serif",  "labelFontSize": 14, "labelAngle": 0, "labelAlign":"center", "labelBaseline": "top", "labelFont": "Pangolin, sans-serif"}
         },
         "y": {
           "field": "rarity",
-          "title": "% of players with the achievement",
+          "title": "% of players with an achievement",
           "type": "quantitative",
           "stack": false,
-          "axis": {"titleFontSize": 16, "labelFontSize": 14}
+          "axis": {"titleFontSize": 16, "titleFont": "Pangolin, sans-serif", "titlePadding": 10, "labelFontSize": 14, "labelFont": "Pangolin, sans-serif"}
         },
         "color": {
           "field": "chapter",
-          "scale": {},
+          "scale": { "scheme": { "name": "set1"}},
           "legend": {
             "labelFontSize": 16,
-            "title": "Chapter",
-            "titleFontSize": 18
-
+            "title": null,
+            "titleFontSize": 18,
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 145,
+            "legendY": -50,
+            "labelExpr": "{'3': 'Chapter 3', '4.5': 'Chapter 4.5','5': 'Chapter 5','6': 'Chapter 6'}[datum.label]"
           }
         },
         "shape": {
-          "field": "chapter"
-        }
-      }
-    },
-    {
-      "mark": {"type": "line"},
-      "encoding": {
-        "x": {
-          "field": "boss",
-          "title": "Boss",
-          "type": "nominal",
-          "sort": [
-            "Boss Rush",
-            "Hush",
-            "Isaac",
-            "Satan",
-            "???",
-            "The Lamb",
-            "Mega Satan"       
-          ],
-          "scale": {},
-          "axis": {"titleFontSize": 16, "labelFontSize": 14}
-        },
-        "y": {"field": "rarity", "aggregate": "mean"},
-        "order":{
-          "field": "chapter"
+          "field": "chapter",
+          "scale": { "range": ["triangle", "square", "circle",  "diamond"] },
+          "legend":{
+            "symbolStrokeWidth": 2.5,
+            "symbolOpacity": 1,
+            "labelFont": "Pangolin, sans-serif"
+          }
         }
       }
     }
+
+    
   ],
   "config": {},
   "data": {
