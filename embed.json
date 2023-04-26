@@ -40,14 +40,23 @@
                 "domain": [
                     0,
                     100
-                ]
+                ],
+                "range": [0, 100]
+            },
+            "axis": {
+                "titleFontSize": 16,
+                "labelFontSize": 14
             }
         },
         "y": {
             "field": "density",
             "title": "Number of achivements",
             "type": "quantitative",
-            "stack": false
+            "stack": false,
+            "axis": {
+                "titleFontSize": 16,
+                "labelFontSize": 14
+            }
         },
         "color": {
             "field": "dlc",
@@ -61,9 +70,9 @@
                 ]
             },
             "legend": {
-                "labelFontSize": 18,
+                "labelFontSize": 16,
                 "title": "DLC",
-                "titleFontSize": 20
+                "titleFontSize": 18
             }
         },
         "opacity": {
