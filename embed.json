@@ -40,8 +40,7 @@
                 "domain": [
                     0,
                     100
-                ],
-                "range": [0, 100]
+                ]
             },
             "axis": {
                 "titleFontSize": 16,
