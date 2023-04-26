@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 700,
   "height": 400,
-  "background": "#fdf9f2",
+  "background": "#fdf8f0",
   "layer": [
     {
       "mark": {"type": "line",
