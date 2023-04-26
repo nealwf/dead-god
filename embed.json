@@ -43,7 +43,8 @@
                 ]
             },
             "axis": {
-                "titleFontSize": 16
+                "titleFontSize": 16,
+                "labelFontSize": 14
             }
         },
         "y": {
