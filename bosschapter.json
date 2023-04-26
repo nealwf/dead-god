@@ -8,7 +8,7 @@
         "type": "point"
       },
       "encoding": {
-        "x": {
+        "y": {
           "field": "boss",
           "title": "Boss",
           "type": "nominal",
@@ -19,7 +19,7 @@
             "labelFontSize": 14
           }
         },
-        "y": {
+        "x": {
           "field": "rarity",
           "title": "Rarity",
           "type": "quantitative",
@@ -45,7 +45,7 @@
         "type": "line"
       },
       "encoding": {
-        "x": {
+        "y": {
           "field": "boss",
           "title": "Boss",
           "type": "nominal",
@@ -55,7 +55,7 @@
             "labelFontSize": 14
           }
         },
-        "y": {
+        "x": {
           "field": "rarity",
           "aggregate": "mean"
         }
