@@ -3,7 +3,8 @@
     "width": 1000,
     "height": 500,
     "mark": {
-        "type": "line"
+        "type": "line",
+        "point": true
     },
     "encoding": {
         "x": {
@@ -37,8 +38,12 @@
             "legend": {
                 "labelFontSize": 16,
                 "title": "Boss",
-                "titleFontSize": 18
+                "titleFontSize": 18,
+                "values": ["Boss Rush", "Hush", "Isaac", "Satan", "???", "The Lamb", "Mega Satan"]
             }
+        },
+        "shape": {
+            "field": "boss", "type":"nominal"
         }
     },
     "config": {
