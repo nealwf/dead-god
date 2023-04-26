@@ -2,64 +2,71 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 500,
+  "background": "#fdf9f2",
   "layer": [
     {
-      "mark": {
-        "type": "point"
-      },
+      "mark": {"type": "point"},
       "encoding": {
-        "y": {
+        "x": {
           "field": "boss",
           "title": "Boss",
           "type": "nominal",
-          "sort": ["Mega Satan", "The Lamb", "???", "Satan", "Isaac", "Hush", "Boss Rush"],
+          "sort": [
+            "Boss Rush",
+            "Hush",
+            "Isaac",
+            "Satan",
+            "???",
+            "The Lamb",
+            "Mega Satan"       
+          ],
           "scale": {},
-          "axis": {
-            "titleFontSize": 16,
-            "labelFontSize": 14
-          }
+          "axis": {"titleFontSize": 16, "labelFontSize": 14, "labelAngle": 0}
         },
-        "x": {
+        "y": {
           "field": "rarity",
-          "title": "Rarity",
+          "title": "% of players with the achievement",
           "type": "quantitative",
           "stack": false,
-          "axis": {
-            "titleFontSize": 16,
-            "labelFontSize": 14
-          }
+          "axis": {"titleFontSize": 16, "labelFontSize": 14}
         },
         "color": {
-          "field": "boss",
+          "field": "chapter",
           "scale": {},
           "legend": {
             "labelFontSize": 16,
-            "title": "Boss",
-            "titleFontSize": 18,
-            "values": ["Mega Satan", "The Lamb", "???", "Satan", "Isaac", "Hush", "Boss Rush"]
+            "title": "Chapter",
+            "titleFontSize": 18
+
           }
+        },
+        "shape": {
+          "field": "chapter"
         }
       }
     },
     {
-      "mark": {
-        "type": "line"
-      },
+      "mark": {"type": "line"},
       "encoding": {
-        "y": {
+        "x": {
           "field": "boss",
           "title": "Boss",
           "type": "nominal",
-          "sort": ["Mega Satan", "The Lamb", "???", "Satan", "Isaac", "Hush", "Boss Rush"],
+          "sort": [
+            "Boss Rush",
+            "Hush",
+            "Isaac",
+            "Satan",
+            "???",
+            "The Lamb",
+            "Mega Satan"       
+          ],
           "scale": {},
-          "axis": {
-            "titleFontSize": 16,
-            "labelFontSize": 14 
-          }
+          "axis": {"titleFontSize": 16, "labelFontSize": 14}
         },
-        "x": {
-          "field": "rarity",
-          "aggregate": "mean"
+        "y": {"field": "rarity", "aggregate": "mean"},
+        "order":{
+          "field": "chapter"
         }
       }
     }
@@ -67,42 +74,22 @@
   "config": {},
   "data": {
     "values": [
-      {
-        "character": "???",
-        "boss": "???",
-        "rarity": 24.200000763,
-        "chapter": 6
-      },
+      {"character": "???", "boss": "???", "rarity": 24.200000763, "chapter": 6},
       {
         "character": "Azazel",
         "boss": "???",
         "rarity": 29.299999237,
         "chapter": 6
       },
-      {
-        "character": "Cain",
-        "boss": "???",
-        "rarity": 26,
-        "chapter": 6
-      },
+      {"character": "Cain", "boss": "???", "rarity": 26, "chapter": 6},
       {
         "character": "Eden",
         "boss": "???",
         "rarity": 25.200000763,
         "chapter": 6
       },
-      {
-        "character": "Eve",
-        "boss": "???",
-        "rarity": 23,
-        "chapter": 6
-      },
-      {
-        "character": "Isaac",
-        "boss": "???",
-        "rarity": 32.5,
-        "chapter": 6
-      },
+      {"character": "Eve", "boss": "???", "rarity": 23, "chapter": 6},
+      {"character": "Isaac", "boss": "???", "rarity": 32.5, "chapter": 6},
       {
         "character": "Judas",
         "boss": "???",
@@ -133,12 +120,7 @@
         "rarity": 24.600000381,
         "chapter": 6
       },
-      {
-        "character": "Samson",
-        "boss": "???",
-        "rarity": 23.5,
-        "chapter": 6
-      },
+      {"character": "Samson", "boss": "???", "rarity": 23.5, "chapter": 6},
       {
         "character": "The Lost",
         "boss": "???",
@@ -199,12 +181,7 @@
         "rarity": 22.600000381,
         "chapter": 3
       },
-      {
-        "character": "Lilith",
-        "boss": "Boss Rush",
-        "rarity": 18,
-        "chapter": 3
-      },
+      {"character": "Lilith", "boss": "Boss Rush", "rarity": 18, "chapter": 3},
       {
         "character": "Maggie",
         "boss": "Boss Rush",
@@ -247,12 +224,7 @@
         "rarity": 19.899999619,
         "chapter": 4.5
       },
-      {
-        "character": "Eve",
-        "boss": "Hush",
-        "rarity": 17.5,
-        "chapter": 4.5
-      },
+      {"character": "Eve", "boss": "Hush", "rarity": 17.5, "chapter": 4.5},
       {
         "character": "Isaac",
         "boss": "Hush",
@@ -289,18 +261,8 @@
         "rarity": 18.799999237,
         "chapter": 4.5
       },
-      {
-        "character": "Samson",
-        "boss": "Hush",
-        "rarity": 18,
-        "chapter": 4.5
-      },
-      {
-        "character": "The Lost",
-        "boss": "Hush",
-        "rarity": 15,
-        "chapter": 4.5
-      },
+      {"character": "Samson", "boss": "Hush", "rarity": 18, "chapter": 4.5},
+      {"character": "The Lost", "boss": "Hush", "rarity": 15, "chapter": 4.5},
       {
         "character": "???",
         "boss": "Isaac",
@@ -325,12 +287,7 @@
         "rarity": 29.799999237,
         "chapter": 5
       },
-      {
-        "character": "Eve",
-        "boss": "Isaac",
-        "rarity": 26,
-        "chapter": 5
-      },
+      {"character": "Eve", "boss": "Isaac", "rarity": 26, "chapter": 5},
       {
         "character": "Isaac",
         "boss": "Isaac",
@@ -367,12 +324,7 @@
         "rarity": 28.799999237,
         "chapter": 5
       },
-      {
-        "character": "Samson",
-        "boss": "Isaac",
-        "rarity": 28,
-        "chapter": 5
-      },
+      {"character": "Samson", "boss": "Isaac", "rarity": 28, "chapter": 5},
       {
         "character": "The Lost",
         "boss": "Isaac",
@@ -439,12 +391,7 @@
         "rarity": 15.199999809,
         "chapter": 6
       },
-      {
-        "character": "Maggie",
-        "boss": "Mega Satan",
-        "rarity": 18,
-        "chapter": 6
-      },
+      {"character": "Maggie", "boss": "Mega Satan", "rarity": 18, "chapter": 6},
       {
         "character": "Samson",
         "boss": "Mega Satan",
@@ -487,12 +434,7 @@
         "rarity": 25.200000763,
         "chapter": 5
       },
-      {
-        "character": "Isaac",
-        "boss": "Satan",
-        "rarity": 41.5,
-        "chapter": 5
-      },
+      {"character": "Isaac", "boss": "Satan", "rarity": 41.5, "chapter": 5},
       {
         "character": "Judas",
         "boss": "Satan",
@@ -523,12 +465,7 @@
         "rarity": 28.100000381,
         "chapter": 5
       },
-      {
-        "character": "Samson",
-        "boss": "Satan",
-        "rarity": 27,
-        "chapter": 5
-      },
+      {"character": "Samson", "boss": "Satan", "rarity": 27, "chapter": 5},
       {
         "character": "The Lost",
         "boss": "Satan",
@@ -565,12 +502,7 @@
         "rarity": 20.799999237,
         "chapter": 6
       },
-      {
-        "character": "Isaac",
-        "boss": "The Lamb",
-        "rarity": 32.5,
-        "chapter": 6
-      },
+      {"character": "Isaac", "boss": "The Lamb", "rarity": 32.5, "chapter": 6},
       {
         "character": "Judas",
         "boss": "The Lamb",
@@ -601,12 +533,7 @@
         "rarity": 22.899999619,
         "chapter": 6
       },
-      {
-        "character": "Samson",
-        "boss": "The Lamb",
-        "rarity": 21.5,
-        "chapter": 6
-      },
+      {"character": "Samson", "boss": "The Lamb", "rarity": 21.5, "chapter": 6},
       {
         "character": "The Lost",
         "boss": "The Lamb",
