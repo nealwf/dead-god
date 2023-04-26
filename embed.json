@@ -654,14 +654,14 @@
             ],
             "params": [
                 {
-                    "name": "industry",
+                    "name": "dlcSets",
                     "select": { "type": "point", "fields": ["dlc"] },
                     "bind": "legend"
                 }
             ],
             "mark": { "type": "bar" },
             "encoding": {
-                "x": { "field": "value", "title": "IMDB Rating", "type": "quantitative" },
+                "x": { "field": "value", "title": "% of players with the achievement", "type": "quantitative" },
                 "y": { "field": "density", "type": "quantitative", "stack": false },
                 "color": {
                     "field": "dlc",
@@ -669,13 +669,21 @@
                         "range": [
                             "rgba(47, 58, 91, 0.7)",
                             "rgba(113, 75, 119, 0.7)",
-                            "rgba(182, 93, 124, 07)",
+                            "rgba(182, 93, 124, 0.7)",
                             "rgba(245, 171, 81, 0.7)",
                             "rgba(117, 47, 47, 0.7)"
                         ]
-                    }
+                    },
+                     "legend": {
+						 "labels": {
+					 		"labelFontSize": 18
+					 	},
+						 "title": "DLC"
+					}       
                 },
-                "opacity": { "condition": { "param": "industry", "value": 1 }, "value": 0.2 }
+                "opacity": { "condition": { "param": "dlcSets", "value": 1 }, "value": 0.2 }
             },
-            "config": {}
+            "config": {
+                "axisX": { "minExtent": 0 }
+            }
         }
