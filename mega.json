@@ -10,7 +10,9 @@
             "field": "character",
             "title": "Character",
             "type": "nominal",
+            "sort": "-y",
             "scale": {
+                
             },
             "axis": {
                 "titleFontSize": 16,
@@ -40,9 +42,6 @@
         }
     },
     "config": {
-        "axisX": {
-            "minExtent": 0
-        }
     },
     "data": {
         "values":[
