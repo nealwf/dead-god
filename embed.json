@@ -675,10 +675,9 @@
                         ]
                     },
                      "legend": {
-						 "labels": {
-					 		"labelFontSize": 18
-					 	},
-						 "title": "DLC"
+					 	"labelFontSize": 18,
+						"title": "DLC",
+						 "titleFontSize": 20
 					}       
                 },
                 "opacity": { "condition": { "param": "dlcSets", "value": 1 }, "value": 0.2 }
