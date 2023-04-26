@@ -1,5 +1,49 @@
 {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": "container",
+            "height": "container",
+            "transform": [
+                {
+                    "density": "percent",
+                    "bandwidth": 0.5,
+                    "groupby": ["dlc"],
+                    "counts": true,
+                    "extent": [0, 100]
+                }
+            ],
+            "params": [
+                {
+                    "name": "dlcSets",
+                    "select": { "type": "point", "fields": ["dlc"] },
+                    "bind": "legend"
+                }
+            ],
+            "mark": { "type": "bar" },
+            "encoding": {
+                "x": { "field": "value", "title": "% of players with the achievement", "type": "quantitative", "scale": { "domain":[0, 100] } },
+                "y": { "field": "density", "title": "Number of achivements", "type": "quantitative", "stack": false },
+                "color": {
+                    "field": "dlc",
+                    "scale": {
+                        "range": [
+                            "rgba(47, 58, 91, 0.7)",
+                            "rgba(113, 75, 119, 0.7)",
+                            "rgba(182, 93, 124, 0.7)",
+                            "rgba(245, 171, 81, 0.7)",
+                            "rgba(117, 47, 47, 0.7)"
+                        ]
+                    },
+                     "legend": {
+					 	"labelFontSize": 18,
+						"title": "DLC",
+						 "titleFontSize": 20
+					}       
+                },
+                "opacity": { "condition": { "param": "dlcSets", "value": 1 }, "value": 0.2 }
+            },
+            "config": {
+                "axisX": { "minExtent": 0 }
+            },
             "data": { 
                "values": [
                     { "dlc": "Rebirth", "percent": 65 },
@@ -640,49 +684,6 @@
                     { "dlc": "Repentance", "percent": 2.70000004768372 },
                     { "dlc": "Repentance", "percent": 2.29999995231628 }
                 ]
-            },
-            "width": "container",
-            "height": "container",
-            "transform": [
-                {
-                    "density": "percent",
-                    "bandwidth": 0.5,
-                    "groupby": ["dlc"],
-                    "counts": true,
-                    "extent": [0, 100]
-                }
-            ],
-            "params": [
-                {
-                    "name": "dlcSets",
-                    "select": { "type": "point", "fields": ["dlc"] },
-                    "bind": "legend"
-                }
-            ],
-            "mark": { "type": "bar" },
-            "encoding": {
-                "x": { "field": "value", "title": "% of players with the achievement", "type": "quantitative", "scale": { "domain":[0, 100] } },
-                "y": { "field": "density", "title": "Number of achivements", "type": "quantitative", "stack": false }
-                "color": {
-                    "field": "dlc",
-                    "scale": {
-                        "range": [
-                            "rgba(47, 58, 91, 0.7)",
-                            "rgba(113, 75, 119, 0.7)",
-                            "rgba(182, 93, 124, 0.7)",
-                            "rgba(245, 171, 81, 0.7)",
-                            "rgba(117, 47, 47, 0.7)"
-                        ]
-                    },
-                     "legend": {
-					 	"labelFontSize": 18,
-						"title": "DLC",
-						 "titleFontSize": 20
-					}       
-                },
-                "opacity": { "condition": { "param": "dlcSets", "value": 1 }, "value": 0.2 }
-            },
-            "config": {
-                "axisX": { "minExtent": 0 }
             }
+            
         }
