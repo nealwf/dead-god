@@ -45,7 +45,9 @@
             },
             "axis": {
                 "titleFontSize": 16,
-                "labelFontSize": 14
+                "labelFontSize": 14,
+                "titleFont": "Source Sans Pro, monospace",
+                "labelFont": "Source Sans Pro, monospace"
             }
         },
         "y": {
@@ -55,7 +57,9 @@
             "stack": false,
             "axis": {
                 "titleFontSize": 16,
-                "labelFontSize": 14
+                "labelFontSize": 14,
+                "titleFont": "Source Sans Pro, monospace",
+                "labelFont": "Source Sans Pro, monospace"
             }
         },
         "color": {
@@ -72,7 +76,9 @@
             "legend": {
                 "labelFontSize": 16,
                 "title": "DLC",
-                "titleFontSize": 18, "values": ["Rebirth", "Afterbirth", "Afterbirth+", "Booster Pack 5", "Repentance"]
+                "titleFontSize": 18, "values": ["Rebirth", "Afterbirth", "Afterbirth+", "Booster Pack 5", "Repentance"],
+                "titleFont": "Source Sans Pro, monospace",
+                "labelFont": "Source Sans Pro, monospace"
             }
         },
         "opacity": {
