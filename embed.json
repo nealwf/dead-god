@@ -43,23 +43,24 @@
                     100
                 ]
             },
+            "gridColor": "#cbb9ad",
             "axis": {
                 "titleFontSize": 16,
                 "labelFontSize": 14,
-                "titleFont": "Source Sans Pro, monospace",
-                "labelFont": "Source Sans Pro, monospace"
+                "titleFont": "'Atkinson Hyperlegible', sans-serif",
+                "labelFont": "'Atkinson Hyperlegible', sans-serif"
             }
         },
         "y": {
             "field": "density",
-            "title": "Number of achivements",
+            "title": "Number of achievements",
             "type": "quantitative",
             "stack": false,
             "axis": {
                 "titleFontSize": 16,
                 "labelFontSize": 14,
-                "titleFont": "Source Sans Pro, monospace",
-                "labelFont": "Source Sans Pro, monospace"
+                "titleFont": "'Atkinson Hyperlegible', sans-serif",
+                "labelFont": "'Atkinson Hyperlegible', sans-serif"
             }
         },
         "color": {
@@ -77,8 +78,8 @@
                 "labelFontSize": 16,
                 "title": "DLC",
                 "titleFontSize": 18, "values": ["Rebirth", "Afterbirth", "Afterbirth+", "Booster Pack 5", "Repentance"],
-                "titleFont": "Source Sans Pro, monospace",
-                "labelFont": "Source Sans Pro, monospace"
+                "titleFont": "'Atkinson Hyperlegible', sans-serif",
+                "labelFont": "'Atkinson Hyperlegible', sans-serif"
             }
         },
         "opacity": {
