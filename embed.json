@@ -43,8 +43,8 @@
                     100
                 ]
             },
-            "gridColor": "#cbb9ad",
             "axis": {
+                "gridColor": "#cbb9ad",
                 "titleFontSize": 16,
                 "labelFontSize": 14,
                 "titleFont": "'Atkinson Hyperlegible', sans-serif",
