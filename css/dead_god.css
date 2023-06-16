@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: "Upheaval";
-  src: url(upheavtt.ttf);
+  src: url(../fonts/upheavtt.ttf);
 }
 
 @font-face {
   font-family: "Isaac";
-  src: url(IsaacGame.ttf);
+  src: url(../fonts/IsaacGame.ttf);
 }
 
 body {
