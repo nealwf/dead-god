@@ -10,6 +10,7 @@ It's intended to be my personal project, but I would love to hear your thoughts 
 * Update the CSS for smaller screens.
 * Add alt text to images.
 * Populate Sources page with font, image, and data info.
+* Add footer with link back to repository.
 
 ### Charts
 * Update all charts to Vega-Lite. This project was originally built with Chart.JS and Vega-Lite, but Vega-Lite is more flexible.
