@@ -152,7 +152,7 @@ p:not(.paper-p) {
   height: 17.5vw;
   padding: 1em 1.5em;
   text-align: center;
-  background-image: url(images/paper.png);
+  background-image: url(../images/paper.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: "Pangolin", cursive;
@@ -182,7 +182,7 @@ p:not(.paper-p) {
 
 .explain-img {
   width: 29vw;
-  background: url(images/note_left.png);
+  background: url(../images/note_left.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 5.6em 6em 4em 3em;
@@ -220,7 +220,7 @@ text-align: center;
 
 
 #boss {
-  background: url(images/note.png);
+  background: url(../images/note.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 6em 5em 4em 3em;
