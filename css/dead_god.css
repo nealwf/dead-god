@@ -41,10 +41,6 @@ header {
   margin: 0 auto 3em;
 }
 
-h1 span {
-  padding: 0 4.175em;
-}
-
 header h1 {
   margin-bottom: 0.2em;
 }
@@ -52,6 +48,10 @@ header h1 {
 header span,
 h1 span {
   font-size: 34px;
+}
+
+#subtitle {
+  font-size: 26px;
 }
 
 h1 {
